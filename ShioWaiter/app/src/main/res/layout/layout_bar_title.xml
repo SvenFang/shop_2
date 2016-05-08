@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+通用头部栏
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/glo_nav_bar_bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/left_btn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/top_back" />
+
+        <TextView
+            android:id="@+id/left_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_l"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!--标题-->
+    <TextView
+        android:id="@+id/title_show"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_xl" />
+
+
+
+
+
+    <!--右区域-->
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="60dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/right_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/right_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_l"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>
